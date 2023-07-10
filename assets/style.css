@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header h3 {
+    width: 50%;
+}
+
+header p {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.hide{
+    display: none;
+}
+
+#start-screen, #question, #save-score, #highscores{
+    text-align: center;
+}
+
+#question ul{
+    list-style: none;
+}

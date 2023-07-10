@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <header>
+            <h3>View Highscores</h3>
+
+            <p>Time: <label for="" id="timer">0</label></p>
+        </header>
+
+        <main>
+            <section id="start-screen">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, distinctio quaerat. Voluptatibus obcaecati, ex est quaerat veritatis minus totam culpa asperiores molestiae. Deserunt officia labore dolor at quos laboriosam et!</p>
+                <button id="start-btn">Start Quiz</button>
+            </section>
+            <section id="question">
+                <h2 id="title">Question 1</h2>
+                <ul>
+                    <li><button class="choices">choice 1</button></li>
+                    <li><button class="choices">choice 2</button></li>
+                    <li><button class="choices">choice 3</button></li>
+                    <li><button class="choices">choice 4</button></li>
+                </ul>
+            </section>
+            <section id="save-score">
+                <h1>All done!</h1>
+                <p>Your final score is <label for="" id="score">80</label></p>
+                Enter Initials: <input type="text" id="user-initials">
+                <button id="save-btn">Save</button>
+            </section>
+            <section id="highscores">
+                <h2>High Scores</h2>
+                <ol>
+                    <li>MO-80</li>
+                </ol>
+
+                <button id="back-btn">Go Back</button>
+                <button id="clear-btn">Clear Scores</button>
+            </section>
+        </main>
+
+        <script src="./assets/script.js"></script>
+    </body>
+</html>
