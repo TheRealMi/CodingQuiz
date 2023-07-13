@@ -1,17 +1,5 @@
 /*TODO
-Deduct Points for invalid answers
-    check if choice matches value of answer
-    display "wrong" or "correct" footer depending on user's answer
-End Quiz
-    check if timer is at 0
-    OR
-    if all questions are answered
-Save Score
-    set local storage for user input (initials)
-    set local storage for user score (time left)
-    display high score screen
-        append user initials and score to ordered list on high scores screen
-Add button for high score screen at top left of page
+Style Everything
 */
 
 var startScreenEl= document.getElementById("start-screen")
@@ -57,9 +45,9 @@ var questionsArray=[
         answer: "var dogs = ['doberman', 'shiba inu', 'golden retriever']"
     },
     {
-        title: "Put question5 here",
-        choices: ["C1","C2","C3","C4"],
-        answer: "C3"
+        title: "Where is the correct place to insert JavaScript?",
+        choices: ["The <body> section","The <head> section","The <title> section","It doesn't need to go in a section"],
+        answer: "The <body> section"
     }
 ]
 
@@ -134,6 +122,10 @@ function countDown() {
 //Function to save user scores to local storage
 function saveScore(){
     var initials = userInitialsEl.value;
+    if (initials === ""){
+        alert("Please enter your initials");
+    }
+    else{
     var userObject = {
         user: initials,
         score: timerEl.textContent
@@ -151,7 +143,7 @@ function saveScore(){
     //Hide save screen
     saveScoreEl.classList.add("hide");
     //Display high scores
-    highscoresEl.removeAttribute("class");
+    highscoresEl.removeAttribute("class");}
     
 }
 
@@ -165,9 +157,10 @@ function backToMain() {
     questionIndex = 0;
 }
 
-//Clears local storage
+//Clears local storage and high scores list
 function clearScores() {
     localStorage.clear();
+    leaderboardEl.removeChild();
 }
 
 //Displays Leaderboard

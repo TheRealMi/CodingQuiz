@@ -12,6 +12,24 @@ header p {
     display: flex;
     justify-content: end;
 }
+main{
+    display: flex;
+}
+
+button {
+    color: white;
+    background-color: purple;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.choices{
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+button:hover {background-color:rgb(198, 147, 247);
+}
 
 .hide{
     display: none;
@@ -21,6 +39,7 @@ header p {
     color: purple;
     border: none;
     background-color: white;
+    font-size: 14px;
 }
 
 #start-screen, #question, #save-score, #highscores{
@@ -29,4 +48,10 @@ header p {
 
 #question ul{
     list-style: none;
+}
+
+#title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
 }
