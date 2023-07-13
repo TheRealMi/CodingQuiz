@@ -17,6 +17,12 @@ header p {
     display: none;
 }
 
+#leaderboard-btn{
+    color: purple;
+    border: none;
+    background-color: white;
+}
+
 #start-screen, #question, #save-score, #highscores{
     text-align: center;
 }
