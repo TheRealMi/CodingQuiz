@@ -15,7 +15,14 @@ header p {
 main{
     display: flex;
 }
-
+h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+section{
+    margin: 0% 25%;
+}
 button {
     color: white;
     background-color: purple;

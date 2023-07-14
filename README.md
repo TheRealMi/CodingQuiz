@@ -17,12 +17,11 @@ You can access this project by clicking the following link: https://therealmi.gi
 
 ## Usage
 Start the quiz by clicking the button on the main screen
-![Main Screen](./assets/images/PasswordGenerator.PNG)
+![Main Screen](./assets/images/mainscreen.PNG)
 Choose your answers wisely, time will be deducted for incorrect answers. The quiz will let you know if you are wrong or right after each question.
-![Password Length Prompt](./assets/images/passwordLengthPrompt.PNG)
-![Character Prompts](./assets/images/characterPrompt.PNG)
+![Question](./assets/images/question.PNG)
 Once you complete the quiz, log your initials in the text box to store your score in local storage
-![Final Password](./assets/images/finalPassword.PNG)
+![Save Screen](./assets/images/SaveScreen.PNG)
 Play again to get the highscore!
 
 
